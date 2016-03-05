@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title" align="center">Your Life Planner</h1>
+    </ion-header-bar>
+    <ion-content>
+
+        <ul class="list">
+
+            <p> <br>&nbsp Your gender</br></p>
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Male
+            </li>
+
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Female
+            </li>
+
+
+            <p> <br>&nbsp Your age?</br></p>
+
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="age">
+                </label>
+            </div>
+
+            <p> <br>&nbsp Marital Status</br></p>
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Single
+            </li>
+
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Married
+            </li>
+
+            <p> <br>&nbsp Number of children</br></p>
+
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="0 to 4">
+                </label>
+            </div>
+
+            <p> <br>&nbsp Annual income</br></p>
+
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="">
+                </label>
+            </div>
+
+            <p> <br>&nbsp Retirement Age</br></p>
+
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="">
+                </label>
+            </div>
+
+            <p> <br>&nbsp Do you have a house?</br></p>
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Yes
+            </li>
+
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                No
+            </li>
+
+
+            <p> <br>&nbsp If yes, is it under mortgage?</br></p>
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Yes
+            </li>
+
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                No
+            </li>
+
+            <p> <br>&nbsp Stocks</br></p>
+
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="0 to 1 Million">
+                </label>
+            </div>
+
+            <p> <br>&nbsp Cash</br></p>
+
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="0 to 1 Million">
+                </label>
+            </div>
+
+            <div>
+                <a class="button button-block button-positive" ng-href="profile.html">
+                    Get my plan
+                </a>
+
+            </div>
+
+
+
+        </ul>
+
+    </ion-content>
+</ion-pane>
+</body>
+</html>

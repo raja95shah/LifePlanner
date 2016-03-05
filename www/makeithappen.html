@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-assertive">
+        <!--<a href="#">-->
+        <!--<i class="icon ion-ios-arrow-back"></i>-->
+        <!--</a>-->
+        <h1 class="title" align="center">Make it Happen</h1>
+        <a button class="button ion-android-contact" ng-href="profile_new.html">
+            My Profile</a>
+    </ion-header-bar>
+
+<ion-view view-title="Make It Happen">
+  <ion-content>
+   <div class="list">
+
+  <div class="item item-divider" align="center">
+    Skiing 
+  </div>
+
+  <a class="item item-icon-left" href="#">
+    		<i class="icon ion-plane"></i>
+      		<h2>Book Flight Ticket</h2>
+     </a>
+     <a class="item item-icon-left" href="#">
+    		<i class="icon ion-bag"></i>
+      		<h2>Buy Equipment</h2>
+     </a>
+     <a class="item item-icon-left" href="friends_dup.html">
+    		<i class="icon ion-android-person-add"></i>
+      		<h2>Invite Friend</h2>
+     <a class="item item-icon-left" href="#">
+    		<i class="icon ion-android-walk"></i>
+      		<h2>Book Coach</h2>
+     </a>
+     <a class="item item-icon-left" ng-click="tab=1">
+    		<i class="icon ion-cash"></i>
+      		<h2>Buy a Insurance</h2>
+     </a>
+    
+  
+   <div class="card" ng-show="tab===1">
+   <a class="item item-icon-left" href="#">
+    		<i class="icon ion-android-sunny"></i>
+      		<h2>Make sure they cover dangerous sport</h2>
+     </a>
+     <a class="item item-icon-left" href="#">
+    		<i class="icon ion-android-sunny"></i>
+      		<h2>Are they providing emergency Help?</h2>
+     </a>
+  <a class="item item-avatar" href="#">
+      <img src="img/travelinapp.jpg">
+      <h2> DBS Travel Insurance</h2>
+      <p>Our Home-and-way travel protection offers you proper coverage for any eventuality</p>
+    </a>
+  
+</div>
+</div>
+  </ion-content>
+</ion-view>
+

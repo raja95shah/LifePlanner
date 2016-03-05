@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title" align="center">Money In</h1>
+    </ion-header-bar>
+<ion-view view-title="Money In">
+  <ion-content>
+  <br>
+<!--<label for="rangeinput" >&nbspRange&nbsp</label><br><br>
+&nbsp&nbsp&nbsp&nbsp;<input id="rangeinput" type="range" min="0" max="1000000" value="500000" onchange="rangevalue.value=value"M ></input>
+<output id="rangevalue" >&nbsp500000</output>-->
+
+
+
+
+
+<p>&nbsp;<font size="4">Input your amount</font></p>
+  <div class="item range range-positive" for="rangeinput">
+    <i class="icon ion-ios7-sunny-outline"></i>
+    <input id="rangeinput" type="range" min="0" max="1000000" value="500000" onchange="rangevalue.value=value">
+    <i class="icon ion-ios7-sunny"></i>
+    <output id="rangevalue" >&nbsp500000</output>
+  </div>
+
+
+<br>
+
+<div style="width:100%;height:100%;position:absolute;vertical-align:middle;text-align:center;">
+    <button type="button" style="background-color:grey;margin-left:auto;margin-right:auto;display:block" ng-click="tab=1">
+Next</button> 
+</div>​
+
+<br>
+
+
+   <br>
+   <div ng-show="tab===1">
+   <div class="row">
+   <div class="col col-50"><font size="4"><u>Options Available</u></font></div>
+   <div class="col col-50"><font size="4"><u>Retirement Age</u></font></div>
+   </div>
+   <div class="row">
+   <div class="col col-50">Pay Bill</div>
+   <div class="col col-50"><font color="green">No change/Delay</font></div>
+   </div>
+   <div class="row">
+   <div class="col col-50">Pay Loan</div>
+   <div class="col col-50"><font color="green">No change/Delay</font></div>
+   </div>
+   <div class="row">
+   <div class="col col-50">Pay Mortgage</div>
+   <div class="col col-50"><font color="green">No change/Delay</font></div>
+   </div>
+   <div class="row">
+   <div class="col col-50">Investment</div>
+   <div class="col col-50" ><a href="#"><font color="grey">Advance >></font></a></div>
+   </div>
+   <div class="row">
+   <div class="col col-50">Retirement Saving</div>
+   <div class="col col-50" ><a href="#"><font color="grey">Advance >></font></a></div>
+   </div>
+   </div>
+  </ion-content>
+</ion-view>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Friends</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-assertive">
+        <!--<a href="#">-->
+        <!--<i class="icon ion-ios-arrow-back"></i>-->
+        <!--</a>-->
+        <a button class="button ion-android-arrow-back" ng-href="profile_new.html">
+            Back</a>
+        <h1 class="title" align="center">Friends</h1>
+        <!--<a button class="button ion-android-contact" ng-href="profile_new.html">-->
+        <!--Profile</a>-->
+    </ion-header-bar>
+    <ion-content>
+        <!--<div class="list">-->
+
+        <!--<a class="item item-thumbnail-left" href="#">-->
+        <!--<img src="img/rahman.jpg">-->
+        <!--<h2>A. R Rahman</h2>-->
+        <!--<p>Music composer and Singer at Film Industry</p>-->
+        <!--</a>-->
+        <!--<a class="item item-thumbnail-left" href="#">-->
+        <!--<img src="img/billgates.jpg">-->
+        <!--<h2>Bill Gates</h2>-->
+        <!--<p>Founder of Microsoft</p>-->
+        <!--</a>-->
+        <!--<a class="item item-thumbnail-left" href="#">-->
+        <!--<img src="img/usain.jpg">-->
+        <!--<h2>Usain Bolt</h2>-->
+        <!--<p>World champion runner</p>-->
+        <!--</a>-->
+        <!--<a class="item item-thumbnail-left" href="#">-->
+        <!--<img src="img/nelson.jpg">-->
+        <!--<h2>Nelson Mandela</h2>-->
+        <!--<p>Human rights activitists</p>-->
+        <!--</a>-->
+        <!--</div>-->
+
+        <div class="list">
+
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/rahman.jpg">
+                <h2>A.R Rahman</h2>
+                <p><i class="icon ion-sad" style="font-size: 70px"></i></p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/billgates.jpg">
+                <h2>Bill Gates</h2>
+                <p><i class="icon ion-happy" style="font-size: 70px"></i></p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/usain.jpg">
+                <h2>Usain Bolt</h2>
+                <p><i class="icon ion-happy" style="font-size: 70px"></i></p>
+            </a>
+            <a class="item item-thumbnail-left" href="#">
+                <img src="img/nelson.jpg">
+                <h2>Nelson Mandela</h2>
+                <p><i class="icon ion-sad" style="font-size: 70px"></i></p>
+            </a>
+        </div>
+    </ion-content>
+
+
+
+</ion-pane>
+</body>
+</html>
